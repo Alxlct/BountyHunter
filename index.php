@@ -20,7 +20,7 @@ require_once "table.php";
 
 <body>
 
-<h1 class="text-center p-3 txtSize">Bounty-Hunting</h1>
+<h1 class="text-center p-3 txtSize">BOUNTY<img src="assets/img/revolverLogo.png" class="logoSize" alt="logo-Revolver">HUNTING</h1>
 
 
     <div class="row p-0 m-0 justify-content-evenly">
@@ -36,7 +36,7 @@ require_once "table.php";
                         <h3 class="card-title p-3 fs-1">DEAD OR ALIVE</h3>
                         <h2 class="card-body">1.000.000.000$</h2>
                         
-                        <a href="index2.php?choice=<?= $key ?>" class="btn btn-outline-dark my-3 fs-2">Start Hunting</a>
+                        <a href="bounties.php?choice=<?= $key ?>" class="btn btn-outline-dark my-3 fs-2">Start Hunting</a>
                     </div>
                 </div>
             </div>

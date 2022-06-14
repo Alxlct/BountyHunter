@@ -3,7 +3,14 @@ body {
     background-image: url(img/bgBois.jpg);
 
 }
-
+.logoSize {
+    width: 6rem;
+    height: auto;
+    margin: 0;
+    padding: 0;
+    filter: grayscale(1);
+    -webkit-filter: grayscale(1);
+}
 .imgSize {
     border: dashed 5px black;
 
