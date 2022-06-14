@@ -1,0 +1,19 @@
+body {
+    font-family: 'Rye', cursive;
+    background-image: url(img/bgBois.jpg);
+
+}
+
+.imgSize {
+    border: dashed 5px black;
+
+    filter: sepia(0.7);
+    -webkit-filter: sepia(0.7);
+}
+
+.bgBeige {
+    background-color: rgb(201, 169, 130);
+}
+.txtSize {
+    font-size: 4rem;
+}
