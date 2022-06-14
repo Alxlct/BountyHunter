@@ -19,16 +19,18 @@ require_once "table.php";
 
 <body>
     <h1 class="text-center p-3 txtSize">BOUNTY<img src="assets/img/revolverLogo.png" class="logoSize" alt="logo-Revolver">HUNTING</h1>
-    <div class="row justify-content-center">
-        <div class="col-lg-6 bgBeige">
-            <p>You chose this Target: <br><u><?= $data[$_GET["choice"]]["name"] ?></u></p>
-            <p>Mail adress: <?= $data[$_GET["choice"]]["email"] ?></p>
-            <p>Phone Number: <?= $data[$_GET["choice"]]["phone"] ?></p>
-            <p>Adress: <?= $data[$_GET["choice"]]["address"] ?>, <?= $data[$_GET["choice"]]["postalZip"] ?>.<br><?= $data[$_GET["choice"]]["country"] ?></p>
+    <div class="row justify-content-center text-center p-0 m-0">
+        <div class="col-lg-6 col-12 bgBeige">
+            <h2 class="pt-2 fs-1 fw-bold">You chose this Target: <br><u><?= $data[$_GET["choice"]]["name"] ?></u></h2>
+            <img class="card-img-top imgSize" src="assets/img/<?= $data[$_GET["choice"]]["picture"] ?>.jpg" alt="<?= $data[$_GET["choice"]]["picture"] ?>">
+            <p class="pt-2 fs-4">Mail adress: <u><?= $data[$_GET["choice"]]["email"] ?></u></p>
+            <p class="pt-2 fs-4">Phone Number: <?= $data[$_GET["choice"]]["phone"] ?></p>
+            <p class="pt-2 fs-4">Adress: <?= $data[$_GET["choice"]]["address"] ?>, <?= $data[$_GET["choice"]]["postalZip"] ?>.<br><?= $data[$_GET["choice"]]["country"] ?></p>
 
-            <div class="row text-center justify-content-center m-0 p-0">
-                <img src="/assets/img/<?= $data[$_GET["choice"]]["picture"] ?>.png" alt="<?= $data[$_GET["choice"]]["picture"] ?>">
-                <button href="index.php" type="button" class="btn btn-warning">Return to bounty selection</button>
+            <div class="row p-0 m-0 text-center justify-content-center m-0 p-0">
+                <div class="col-lg-12">
+                    <a href="index.php" type="button" class="btn btn-outline-dark fs-1">Return to bounty selection</a>
+                </div>
             </div>
         </div>
 
